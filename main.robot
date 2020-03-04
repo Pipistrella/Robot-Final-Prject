@@ -1,5 +1,7 @@
 *** Settings ***
 Library                        	 SeleniumLibrary
+Library                         String
+
 
 # Variables
 Variables                       Variables/GlobalVariables.py
