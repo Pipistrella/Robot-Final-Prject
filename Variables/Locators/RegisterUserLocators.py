@@ -1,4 +1,8 @@
-# Add here the locators from the homework
+# Here in the Locators directory we should add all locators that we will use
+# The specific locators that are required to go trough the user registration should be in this file according to the
+# file name
+# Examples:
+# top_navigation_sign_in_button = "xpath=//a[contains(@class,'login')]"
 user_account_dropdown = "xpath = //a[@title='My Account']"
 user_register_dropdown_option = "xpath = //a[contains(@href, 'register')]"
 user_first_name_field = "id = input-firstname"
@@ -14,3 +18,4 @@ user_password_field = "id = input-password"
 user_password_confirm_field = "id = input-confirm"
 privacy_policy_consent_checkox = "name = agree"
 register_continue_button = "xpath = //input[@type='submit']"
+
