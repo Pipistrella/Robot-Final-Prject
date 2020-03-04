@@ -7,6 +7,8 @@
 # Library                         SeleniumLibrary
 # Library                         Keywords/MagicFunction.py
 Library                        	 SeleniumLibrary
+Library                         String
+
 
 # Variables
 # Under variable section we should add all paths to the variables with information for forms and constants
