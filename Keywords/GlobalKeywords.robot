@@ -1,6 +1,8 @@
 *** Keywords ***
-                ###     OPEN    BROWSER     ###
+# In the keywords section we keep all the keyords that are used in the *** test cases ***
+# Global keywords keep information that is used in a lots of tests, like open browser keyword, create user, etc.
 
+###     OPEN    BROWSER     ###
 Open Chrome To Storefront
     Create Webdriver      Chrome
     Go To   ${STOREFRONT_URL}
@@ -36,3 +38,4 @@ Create New User
     I Am Registering A Customer
     I Am Entering Valid Information
     The Registration Is Successful
+

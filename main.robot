@@ -29,3 +29,7 @@ Variables                       Variables/Locators/GlobalLocators.py
 Resource                        Keywords/GlobalKeywords.robot
 Resource                        Keywords/RegisterUserKeywords.robot
 Resource                        Keywords/BasketKeywords.robot
+
+
+
+# In case you didn't noticed when something starts with # it is a comment :)
