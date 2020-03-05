@@ -14,7 +14,7 @@ Test Teardown  Close Browser
 *** Test Cases ***
 # Here is a label test cases which means that our scenarios will be written here, usually using the Gherkin steps
 
-#First we have the name of the test and below are the steps.*** Keywords ***
+#First we have the name of the test and below are the steps (*** Keywords ***)
 # Notice that steps should be one TAB to the right for the robot framework to pick them
 Scenario: Successful Registration Of A Customer
     Given I Am Registering A Customer
