@@ -4,6 +4,8 @@
 SERVER = "opencart.abstracta.us"
 # The good practise is to use sever in separate variable so you can switch between environments easily with only
 # one change here and not updating all of the URLs one by one
+LEVEL = "--log-level=3"
+LANG = "--lang=us"
 
 STOREFRONT_URL = "http://"+SERVER+"/"
 REGISTER_URL = "https://"+SERVER+"/index.php?route=account/register"
