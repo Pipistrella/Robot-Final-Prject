@@ -7,8 +7,15 @@
 # Library                         SeleniumLibrary
 # Library                         Keywords/MagicFunction.py
 Library                        	 SeleniumLibrary
-Library                         String
-Library                         Keywords/pricesStuff.py
+Library                          String
+Library                          Keywords/pricesStuff.py
+
+# Most used Robot Framework Libraries are:
+# Builtin
+# Selenium
+# String
+# Collections
+# You can add them prom File > Settings > Project > Project Interpreter
 
 
 # Variables
