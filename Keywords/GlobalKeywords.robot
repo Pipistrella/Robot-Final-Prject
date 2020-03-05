@@ -4,11 +4,14 @@
 
 ###     OPEN    BROWSER     ###
 Open Chrome To Storefront
+# Here you can change the browser
     Create Webdriver      Chrome
+# Setting the start location
     Go To   ${STOREFRONT_URL}
     Maximize Browser Window
     Set Selenium Speed    ${DELAY}
 
+# This keyword is used to run tests in headless browser
 Open Chrome To Headless
    ${chrome_options} =     Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
    ${prefs} =    Create Dictionary    download.default_directory=${EXECDIR}
@@ -27,8 +30,14 @@ Open Chrome To Headless
    Set Selenium Speed    ${DELAY}
 
 Create Unique User Email
+# Generate random string keyword is used for generating information that you need for each test
+# In this case we will have generated 8 lower case string, like 'qwertyui'
     ${user_email_part_1}=  Generate Random String  ${NUMBER_8}  [LOWER]
+# In this step we will create the actual user email by catenating the random string and the email part
+# The result is 'qwertyui@mailinator.com'
     ${create_user_email}=  Catenate  SEPARATOR=  ${user_email_part_1}  ${user_email_part_2}
+# Set test variable means that you will be able to use this email in the same test where you call this *** keywords ***
+# You can set the variable also to be global (you can use it in every test) or suit (you can use it in the whole test file)
     Set Test Variable  ${create_user_email}
 
 # Creating new user is part of almost every test, so this needs to be configured as global keyword.
