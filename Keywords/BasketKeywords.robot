@@ -9,7 +9,9 @@ I Am Adding Product To The Basket As Anonymous Customer
 
 The Basket VAT Is Calculated Correctly
     Go To Basket Page
-# Get text keyword will get the text from an element and assigne it to a new variable
+# Get text keyword will get the text from an element and assigne it to a new variable.
+# Variable before the keyword is the one where we store the result - in this case - element's text.
+# Varibale after the keyowrd is the page's element we get the text from.
     ${basket_subtotal}=  Get Text  ${basket_page_subtotal}
 # remove_dollar_sign_from_price is a python function that you can find in the pricesStuff.py file
     ${subtotal_substring}=  remove_dollar_sign_from_price  ${basket_subtotal}

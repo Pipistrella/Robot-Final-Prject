@@ -11,10 +11,10 @@ I Am Registering A Customer
     Location Should Be  ${REGISTER_URL}
 
 I Am Entering Valid Information
-# Input Text keyword adds some text to a text field. Commonly used for enter username, password emailsin forms, etc.
+# Input Text keyword adds some text to a text field. Commonly used for enter username, password emails in forms, etc.
     Input Text      ${user_first_name_field}            ${user_first_name_value}
     Input Text      ${user_last_name_field}             ${user_last_name_value}
-# Here we call the create user keyword so we can create the user and use it in the next keyword
+# Here we call the create user keyword so we can create the user and use his email in the next keyword
     Create Unique User Email
     Input Text      ${user_email_field}                 ${create_user_email}
     Input Text      ${user_telephone_field}             ${user_telephone_value}

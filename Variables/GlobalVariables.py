@@ -19,8 +19,8 @@ DELAY = "0.8"
 # Here you can specify which browser you will use or set it to headless browser
 
 # Here you should add any global constants like timeouts, sleeps, numbers that are used in variety of tests, email, etc.
-# TIMEOUT_30s = 30
 
+TIMEOUT_10 = "10 seconds"
 NUMBER_8 = "8"
 NUMBER_1 = "1"
 
@@ -28,4 +28,5 @@ NUMBER_1 = "1"
 # for the user name. For example in the GlobalKeywords.robot there is a keyword that generates the first part and
 # it will be unique for every run. Then it is joined with the user_email_part_2 below.
 user_email_part_2 = "@mailinator.com"
+
 
