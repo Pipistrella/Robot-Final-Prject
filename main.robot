@@ -7,7 +7,7 @@
 # Library                         SeleniumLibrary
 # Library                         Keywords/MagicFunction.py
 Library                        	 SeleniumLibrary
-Library                         String
+Library                          String
 
 
 # Variables
@@ -25,3 +25,7 @@ Variables                       Variables/Locators/RegisterUserLocators.py
 # Example:
 Resource                        Keywords/GlobalKeywords.robot
 Resource                        Keywords/RegisterUserKeywords.robot
+
+
+
+# In case you didn't noticed when something starts with # it is a comment :)
