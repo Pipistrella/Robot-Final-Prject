@@ -1,6 +1,8 @@
 # Here in the Locators directory we should add all locators that we will use
 # The specific locators that are required to go trough the user registration should be in this file according to the
 # file name
+# You should always prefer to use ID for locators if they are available.
+# Locators should be as simple as possible but unique.
 # Examples:
 # top_navigation_sign_in_button = "xpath=//a[contains(@class,'login')]"
 user_account_dropdown = "xpath = //a[@title='My Account']"
@@ -18,4 +20,3 @@ user_password_field = "id = input-password"
 user_password_confirm_field = "id = input-confirm"
 privacy_policy_consent_checkox = "name = agree"
 register_continue_button = "xpath = //input[@type='submit']"
-

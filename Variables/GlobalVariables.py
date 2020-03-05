@@ -10,16 +10,20 @@ REGISTER_URL = "https://"+SERVER+"/index.php?route=account/register"
 SUCCESS_REGISTER_URL = "http://"+SERVER+"/index.php?route=account/success"
 
 DELAY = "0.8"
-# Delay is usually used in Open Browser keyword and sets the selenium speed. The purpose of delay is to make sure that
-# first action is really executed before the second
+# Delay is usually used in Open Browser keyword or similar and sets the selenium speed. The purpose of delay is to make
+# sure that first action is really executed before the second
 
 # BROWSER = "PhantomJS"
 # Here you can specify which browser you will use or set it to headless browser
 
+# Here you should add any global constants like timeouts, sleeps, numbers that are used in variety of tests, email, etc.
 # TIMEOUT_30s = 30
 
 NUMBER_8 = "8"
 NUMBER_1 = "1"
 
+# We store here the second part of the email because the final email used in the tests is created with a random string
+# for the user name. For example in the GlobalKeywords.robot there is a keyword that generates the first part and
+# it will be unique for every run. Then it is joined with the user_email_part_2 below.
 user_email_part_2 = "@mailinator.com"
 
