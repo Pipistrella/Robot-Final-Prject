@@ -13,6 +13,6 @@ def calculate_vat(subtotal):
     vat = 0.2
 # we use float to cast the subtotal to number
     vat_value = float(subtotal) * vat
-# before return we should round the price do the second digit so it matches the format of the prices on the storefront
+# before return we should round the price to the second digit so it matches the format of the prices on the storefront
     return round(vat_value, 2)
 

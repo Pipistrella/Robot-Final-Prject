@@ -4,7 +4,6 @@
 # You should always prefer to use ID for locators if they are available.
 # Locators should be as simple as possible but unique.
 # Examples:
-# top_navigation_sign_in_button = "xpath=//a[contains(@class,'login')]"
 user_account_dropdown = "xpath = //a[@title='My Account']"
 user_register_dropdown_option = "xpath = //a[contains(@href, 'register')]"
 user_first_name_field = "id = input-firstname"
