@@ -29,3 +29,4 @@ NUMBER_1 = "1"
 # it will be unique for every run. Then it is joined with the user_email_part_2 below.
 user_email_part_2 = "@mailinator.com"
 
+TIMEOUT_10 = "10 seconds"
