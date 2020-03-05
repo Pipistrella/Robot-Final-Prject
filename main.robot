@@ -7,7 +7,8 @@
 # Library                         SeleniumLibrary
 # Library                         Keywords/MagicFunction.py
 Library                        	 SeleniumLibrary
-Library                          String
+Library                         String
+Library                         Keywords/pricesStuff.py
 
 
 # Variables
@@ -18,6 +19,8 @@ Variables                       Variables/Forms/RegisterPageVariables.py
 # Locators
 # Under locators section we should add all paths for locators files
 Variables                       Variables/Locators/RegisterUserLocators.py
+Variables                       Variables/Locators/BasketLocators.py
+Variables                       Variables/Locators/GlobalLocators.py
 
 # Keywords
 # Under keywords section we should add as a resource the path for all keywords files that are used in the project
@@ -25,6 +28,7 @@ Variables                       Variables/Locators/RegisterUserLocators.py
 # Example:
 Resource                        Keywords/GlobalKeywords.robot
 Resource                        Keywords/RegisterUserKeywords.robot
+Resource                        Keywords/BasketKeywords.robot
 
 
 
