@@ -16,16 +16,15 @@ Open Chrome To Headless
    ${chrome_options} =     Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
    ${prefs} =    Create Dictionary    download.default_directory=${EXECDIR}
    Call Method    ${chrome_options}    add_experimental_option    prefs    ${prefs}
+   Call Method    ${chrome_options}    add_argument    --no-sandbox
    Call Method    ${chrome_options}    add_argument    --headless
    Call Method    ${chrome_options}    add_argument    --disable-gpu
    Call Method    ${chrome_options}    add_argument    --incognito
-   Call Method    ${chrome_options}    add_argument     ${LEVEL}
-   Call Method    ${chrome_options}    add_argument     ${LANG}
+   Call Method    ${chrome_options}    add_argument    --log-level=3
+   Call Method    ${chrome_options}    add_argument    --lang=us
    ${options}=     Call Method     ${chrome_options}    to_capabilities
    Log  ${options}
-   Open Browser    ${STOREFRONT_URL}   browser=chrome     desired_capabilities=${options}
-   ${SL}           get library instance    SeleniumLibrary
-   ${webdriver}    Call Method             ${SL}    _current_browser
+   Open Browser    ${DEFAULT URL}   browser=chrome     desired_capabilities=${options}
    Set Window Size    1920    1080
    Set Selenium Speed    ${DELAY}
 
